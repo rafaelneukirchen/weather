@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(163, 229, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.weather-body {
+    display: flex;
+    flex: 1 0 20%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 32px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card {
+    margin-top: 20px;
+    width: calc(20% - 20px);
+    padding: 0;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 0px rgba(128, 128, 128, 0.75);
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.weather-card_temperature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.weather-card_temperature.-sunny {
+    background: #F2901F;
+    background: linear-gradient(25deg, rgba(242, 144, 31, 1) 0%, rgba(255, 162, 122, 1) 50%, rgba(255, 213, 3, 1) 100%);
+}
+
+.weather-card_temperature.-cloudy {
+    background: #6b6b85;
+    background: linear-gradient(25deg, rgba(107, 107, 133, 1) 0%, rgba(147, 147, 196, 1) 17%, rgba(144, 193, 209, 1) 75%, rgba(120, 232, 255, 1) 100%);
+}
+
+.weather-card_temperature.-rainy {
+    background: #7a7aff;
+    background: linear-gradient(25deg, rgba(122, 122, 255, 1) 0%, rgba(84, 84, 255, 1) 25%, rgba(84, 191, 227, 1) 71%, rgba(120, 232, 255, 1) 100%);
+}
+
+.weather-card_temperature.-sunny .weather-card_temperature_information h3 {
+    color: rgba(255, 162, 122, 1);
+}
+
+.weather-card_temperature.-cloudy .weather-card_temperature_information h3 {
+    color: rgba(147, 147, 196, 1)
+}
+
+.weather-card_temperature.-rainy .weather-card_temperature_information h3 {
+    color: rgba(84, 84, 255, 1);
+}
+
+.weather-card_temperature_value {
+    width: 100%;
+    padding-left: 10px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.weather-card_temperature_information {
+    margin-top: px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-card_temperature_information h3 {
+    border-radius: 25px;
+    background-color: aliceblue;
+    font-weight: 900;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 6px 12px;
+    margin-top: 16px;
+}
+
+.weather-card_temperature_information p {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+.weather-card_temperature img {
+    width: 150px;
+    height: 150px;
+}
